@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Semi-deep guide to start developing production grade React apps",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/finnhvman/react-example-2018.git"
@@ -15,5 +12,18 @@
   "bugs": {
     "url": "https://github.com/finnhvman/react-example-2018/issues"
   },
-  "homepage": "https://github.com/finnhvman/react-example-2018#readme"
+  "homepage": "https://github.com/finnhvman/react-example-2018#readme",
+  "scripts": {
+    "start": "start:dev",
+    "start:dev": "webpack-dev-server --config webpack.config.dev.js",
+    "start:prod": "webpack-dev-server --config webpack.config.prod.js",
+
+    "build": "webpack --config webpack.config.prod.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "0.1.17",
+    "copy-webpack-plugin": "4.3.1",
+    "webpack": "3.10.0",
+    "webpack-dev-server": "2.10.0"
+  }
 }
