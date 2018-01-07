@@ -21,11 +21,14 @@
     "build": "webpack -p --config webpack.config.prod.js"
   },
   "dependencies": {
-    "@babel/polyfill": "7.0.0-beta.36"
+    "@babel/polyfill": "7.0.0-beta.36",
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.0.0-beta.36",
     "@babel/preset-env": "7.0.0-beta.36",
+    "@babel/preset-react": "7.0.0-beta.36",
     "babel-loader": "8.0.0-beta.0",
     "clean-webpack-plugin": "0.1.17",
     "copy-webpack-plugin": "4.3.1",

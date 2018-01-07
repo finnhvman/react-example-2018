@@ -1,3 +1,8 @@
 import '@babel/polyfill';
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-document.querySelector('#app').textContent = `Hello World!`;
+ReactDOM.render(
+    <div>{`Hello World!`}</div>,
+    document.getElementById('app')
+);
