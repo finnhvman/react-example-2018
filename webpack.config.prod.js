@@ -1,5 +1,6 @@
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
     devServer: {
@@ -13,7 +14,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.js$/
+                test: /\.js$/,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                }
             }
         ]
     },
@@ -26,7 +31,8 @@ module.exports = {
         new CleanWebpackPlugin('dist'),
         new CopyWebpackPlugin([
             { from: './src/index.html', to: 'index.html' }
-        ])
+        ]),
+        new UglifyJsPlugin()
     ],
     target: 'web'
 };
