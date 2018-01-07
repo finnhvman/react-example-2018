@@ -13,6 +13,22 @@ const counterReducer = (state = initialState.counter, action) => {
                 ...state,
                 value: state.value - 1
             };
+        case types.CLEAR_COUNTER_PENDING:
+            return {
+                ...state,
+                isClearing: true
+            };
+        case types.CLEAR_COUNTER_SUCCESS:
+            return {
+                ...state,
+                isClearing: false,
+                value: 0
+            };
+        case types.CLEAR_COUNTER_FAILURE:
+            return {
+                ...state,
+                isClearing: false
+            };
         default:
             return state;
     }
