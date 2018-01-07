@@ -4,6 +4,7 @@ module.exports = {
     devServer: {
         contentBase: __dirname + '/src',
         compress: true,
+        historyApiFallback: true,
         hot: true,
         port: 9000
     },
