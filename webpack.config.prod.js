@@ -3,11 +3,6 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    devServer: {
-        contentBase: __dirname + '/dist',
-        compress: true,
-        port: 9000
-    },
     entry: [
         './src/index.js'
     ],
