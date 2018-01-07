@@ -1,0 +1,19 @@
+{
+  "name": "react-example-2018",
+  "version": "1.0.0",
+  "description": "Semi-deep guide to start developing production grade React apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/finnhvman/react-example-2018.git"
+  },
+  "author": "Bence Szabo (finnhvman)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/finnhvman/react-example-2018/issues"
+  },
+  "homepage": "https://github.com/finnhvman/react-example-2018#readme"
+}
