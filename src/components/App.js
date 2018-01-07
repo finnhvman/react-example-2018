@@ -3,15 +3,16 @@ import {
     BrowserRouter as Router,
     Route
 } from 'react-router-dom';
+import { MuiThemeProvider } from 'material-ui/styles';
 import Counter from './counter/Counter';
 import Home from './home/Home';
 
 const App = () => (
     <Router>
-        <div>
+        <MuiThemeProvider>
             <Route exact path="/" component={Home}/>
             <Route path="/counter" component={Counter}/>
-        </div>
+        </MuiThemeProvider>
     </Router>
 );
 
